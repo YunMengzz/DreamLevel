@@ -1,0 +1,31 @@
+# 默认等级，不建议删除或修改levelName
+DreamLevel:
+  # 配置或指令都会用到名称
+  # 已经投入使用的level，不要随意更改levelName，因为擅自更改levelName会使得这个level的data数据找不到level对象，从而自动删除。
+  # 若想删除一个level 直接把这个level配置删了即可
+  # 在2.1将会加入level rename指令 用于解决level改名的问题
+  levelName: "dl"
+  minLevel: 0
+  # 默认每级100经验
+  # 最高等级必须设置上 否则最大等级被设置成为 maxLevel:100
+  maxLevel: 100
+  upGradeExp:
+    - "5:10"  #0到5级就每级需要10经验
+    - "10:50"  #6到10级每级需要50经验
+    - "100:100"
+  expBall: 1   #每单位经验球被捡 玩家得到的经验多少
+  permissions:
+    - "10:ten"  #升十级的时候该玩家需要dream.level.ten这个权限
+  upGradeCmd:
+    # 支持papi变量！！！
+    # 支持变量 <playerName>：玩家名称  <uLevel>: 升级后的等级  <currentLevel>：未升级之前的等级
+    # 后续预备增加：数值运算功能
+    10:   #升到十级执行命令
+      - "msg <playerName> &6十级了！"
+      - "say 2"
+    20:
+      - "say 1"
+    # 每级都执行的指令 支持变量 <playerName>：玩家名称  <uLevel>: 升级后的等级  <currentLevel>：未升级之前的等级
+    e:
+      - "msg <playerName> &b哇哦，恭喜你！你升到<uLevel>级了！"
+    # ...

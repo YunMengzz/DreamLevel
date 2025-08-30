@@ -1,0 +1,44 @@
+########################################################
+#
+#▒█▀▀▀█ ▀▀█▀▀ █▀▀█ █▀▀█ ▀▀█▀▀ ▒█▀▀▄ █▀▀█ █▀▀ █▀▀█ █▀▄▀█
+#░▀▀▀▄▄ ░░█░░ █▄▄█ █▄▄▀ ░░█░░ ▒█░▒█ █▄▄▀ █▀▀ █▄▄█ █░▀░█
+#▒█▄▄▄█ ░░▀░░ ▀░░▀ ▀░▀▀ ░░▀░░ ▒█▄▄▀ ▀░▀▀ ▀▀▀ ▀░░▀ ▀░░░▀
+#
+# 启梦官网：http://www.tqmjmc.cn:10/forums/
+# 获取更多插件请到启梦官网！
+# 交流q群：326858960
+# 作者qq：3148483069
+########################################################
+Author: kylin
+version: "2.1.3"
+
+# 建议开启
+actionBar:
+  enable: true   # 获得经验时显示消息是否使用actionBar  默认为true
+  # 使用actionbar提示的level的name  可配置多个！！
+  level:
+    - 'dl'
+# 覆盖原版经验，
+coverVanilla:
+  enable: true
+  # 覆盖原版经验的level的name 只能配置一个！！！
+  level: 'dl'
+MySQL:
+  # 默认不启用 此时数据存储在yml中  启用后数据存储在数据库中
+  enable: false
+  host: 'localhost'
+  port: 3306
+  username: 'root'
+  password: 'root'
+  database: 'dreamlevel'
+# 是否支持跨服
+# 不需要跨服的服务器不用开
+# 开了之后会禁用离线指令系统 并在玩家进入服务器的时候获取一次数据
+kuafu: false
+lore:
+  expAddi:
+    lore: "经验加成:"
+    # example:  经验加成: 0.1-0.5
+    # 设置为true则在duobei后执行
+    # 设置为false则在多倍前执行
+    monitor: false

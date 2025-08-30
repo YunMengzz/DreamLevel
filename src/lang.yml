@@ -1,0 +1,28 @@
+author: StartDream-kylin
+language:
+  # 指令无权限提示信息
+  nocmdper: '&c您没有权限这么做！'
+  # 升级无权限提示信息
+  nolevelupper: '&c您没有升级权限！'
+  # 使用dl get [playername] [levelname] 时的提示信息
+  info:  # 支持papi变量
+  - '&b-----------DreamLevel-----------'
+  - '&b-  玩家: &6<playerName>   &b等级名称: &6<levelName>'
+  - '&b-  当前等级: &6<currentLevel>'
+  - '&b-  当前经验: &6<currentExp>'
+  - '&b-  升级所需经验: &6<upgradeExp>'
+  - '&b-  多倍经验: 倍数: &6<times>  &b时间: &6<time>'
+  - '&b-------- Author: 启梦团队--------'
+  # 支持papi变量 升级时的提示信息
+  levelup: '&a恭喜您升级了！ 当前等级: &6<currentLevel>'
+  # 支持papi变量 获得exp的时候的提示信息 在ActionBar显示
+  getexp: 'actionbar:&a<levelName>: &e[&b<uExp>&7/&b<maxExp>&e][&a+<addExp>&e]'
+  # 支持papi变量 全服多倍经验时给全体玩家的提示信息
+  allPlayerDuobei: "全服多倍经验已开启！！ 倍率: <times>  剩余时间: <time>"
+
+  # 跨服同步数据提示信息:
+  kuaFuStart: "[DreamLevel]正在同步数据..."
+  kuaFuEnd: "[DreamLevel]同步数据成功！"
+
+  # 自带变量： <levelName>: 升级等级   <getExp>: 获得的经验
+  onMobDeathGiveExpMsg: "&b&lDreamLevel > &a&l等级: <levelName> 获得经验<getExp>"

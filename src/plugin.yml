@@ -1,0 +1,12 @@
+name: DreamLevel
+version: 2.1.3
+main: cn.kylin.dreamlevel.Main
+authors: [kylin, De_month]
+softdepend:
+  - PlaceholderAPI
+  - MythicMobs
+commands:
+  dlevel:
+    aliases:
+      - dl
+    description: A command used by DreamLevel, please use dlevel help to get more informations.
